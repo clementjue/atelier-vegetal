@@ -7,7 +7,8 @@ const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for(const file of ['data.js','engine.js','app.js']) new vm.Script(fs.readFileSync(path.join(root,file),'utf8'),{filename:file});
 for(const match of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
   const ref = match[1]; if(ref.startsWith('#')||/^https?:/.test(ref))continue;
-  if(!fs.existsSync(path.join(root,ref)))throw new Error('Missing asset: '+ref);
+  const localRef=ref.split(/[?#]/)[0];
+  if(!fs.existsSync(path.join(root,localRef)))throw new Error('Missing asset: '+ref);
 }
 const D = require('../dist/data.js');
 for(const r of D.recipes){
