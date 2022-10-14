@@ -1,0 +1,20 @@
+{
+  "name": "atelier-vegetal",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A French-Chinese cooking game by Jue WANG: grow ingredients, prepare recipes and explore everyday choices.",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "check": "node scripts/check.cjs",
+    "start": "node scripts/serve.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Jue WANG",
+  "homepage": "https://clementjue.github.io/atelier-vegetal/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clementjue/atelier-vegetal.git"
+  }
+}
