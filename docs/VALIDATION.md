@@ -32,3 +32,7 @@ Les journaux du navigateur ne signalaient aucune erreur ni aucun avertissement a
 ## Limites des contrôles
 
 Il ne s’agit pas d’un audit WCAG complet, d’un essai multi-navigateurs ou d’une mesure d’effet pédagogique. La corruption de sauvegarde est testée au niveau du moteur ; le refus du stockage par différentes politiques de navigateur n’a pas été simulé dans le navigateur de contrôle. La nouvelle implémentation ne permet pas de vérifier le comportement du programme historique perdu.
+
+## Édition publique
+
+La page publiée a été ouverte sans connexion préalable. Le premier plat a été préparé, une préparation a été reprise après rechargement et les deux langues ont été vérifiées. Des requêtes HTTP anonymes sur la page, le script, la feuille de style et l’illustration renvoient 200, sans redirection. La navigation et le bandeau de présentation ont été adaptés aux fenêtres compactes pour préserver la lisibilité.
